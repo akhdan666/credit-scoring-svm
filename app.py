@@ -1,7 +1,7 @@
 import sklearn
 import joblib
-import pandas
-import streamlit
+import pandas as pd
+import streamlit as st
 
 st.set_page_config(page_title="Credit Scoring DSS", layout="wide")
 
@@ -38,7 +38,7 @@ if uploaded_file is not None:
                 
                 st.subheader("Hasil Keputusan Kredit")
                 result_df = input_data[['Risk_Status', 'Confidence_Score']]
-                st.dataframe(result_df.style.applymap(
+                st.dataframe(result_df.style.map(
                     lambda x: 'background-color: #d4edda; color: green;' if x == 'Good Risk' else 'background-color: #f8d7da; color: red;',
                     subset=['Risk_Status']
                 ))
