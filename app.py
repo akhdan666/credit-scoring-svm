@@ -1,6 +1,10 @@
-import streamlit as st
-import pandas as pd
+import sklearn
 import joblib
+import pandas
+import streamlit
+print("scikit-learn:", sklearn.__version__)
+print("joblib:", joblib.__version__)
+print("pandas:", pandas.__version__)
 
 st.set_page_config(page_title="Credit Scoring DSS", layout="wide")
 
