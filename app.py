@@ -59,7 +59,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 3. Header Eksekutif
-st.markdown("<h1>Data-Driven Credit Risk Assessment</h1>", unsafe_allow_html=True)
+# 3. Header Eksekutif
+st.markdown("<h1>🏦 Data-Driven Credit Risk Assessment</h1>", unsafe_allow_html=True)
 st.markdown("<div style='height: 2px; background: linear-gradient(90deg, #2563EB 0%, transparent 100%); margin-top: 10px; margin-bottom: 30px;'></div>", unsafe_allow_html=True)
 
 # Memuat Model Evaluasi
